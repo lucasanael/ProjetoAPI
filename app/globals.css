@@ -1,7 +1,14 @@
-body{
-  background-color: black;
+* {
+  margin: 0;
+
 }
 
-h1{
+body {
+  background-color: black;
+
+}
+
+h1 {
   color: white;
+  
 }

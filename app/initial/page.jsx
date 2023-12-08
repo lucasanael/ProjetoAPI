@@ -1,74 +1,121 @@
-"use client"
 
-import { useEffect, useState } from "react"
-import { generationMarvelHash } from '@/lib/ultilists'
-import Image from "next/image"
+import Link from "next/link"
+import Styles from "@/app/initial/page.module.css"
 
-const publicKey = 'e7ee80fc8ad9b978e46945918fbdec43'
-const privateKey = '313f48973c2a27c938e45ea083fd4d4e41964d96'
 
-const timestamp = new Date().getTime()
-const hash = generationMarvelHash(timestamp, privateKey, publicKey)
 
-const morbius = `http://gateway.marvel.com/v1/public/characters/1009454?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`
-const loki = `http://gateway.marvel.com/v1/public/characters/1009407?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`
-const gamora = `http://gateway.marvel.com/v1/public/characters/1009454?limit=1&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`
-const viuvaNegra = `http://gateway.marvel.com/v1/public/characters/1009454?limit=1&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`
-const deadpool = `http://gateway.marvel.com/v1/public/characters/1009454?limit=1&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`
 
-const Home = () => {
-    const [characters, setCharacters] = useState([])
 
-    useEffect(() => {
-
-        const getData = async () => {
-
-            try {
-                const reposta = await fetch(morbius)
-                const data = await reposta.json()
-                setCharacters(data.data.results)
-
-            }
-            catch (error) {
-
-                console.error('Erro ao buscar dados da API Marvel', error)
-            }
-        }
-        getData()
-
-        const getData2 = async () => {
-
-            try {
-                const reposta = await fetch(loki)
-                const data = await reposta.json()
-                setCharacters(data.data.results)
-
-            }
-            catch (error) {
-
-                console.error('Erro ao buscar dados da API Marvel', error)
-            }
-        }
-        getData2()
-    }, []);
+function Initial() {
 
     return (
-        <div>
-            <h1>Marvel Characters</h1>
-            <ul>
-                {characters.map((character) => (
-                    <li key={character.id}>
-                        {character.name}
-                        <Image
-                            src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
-                            alt={character.name}
-                            width={200}
-                            height={200} />
-                    </li>
-                ))}
-            </ul>
-        </div>
+        <>
+            <div className={Styles.marvel}>
+                <Link className={Styles.nav} href="/morbius"><img src='iconGrupo.png' width={40} height={30} /></Link>
+            </div>
+
+
+            <div className={Styles.texto}>
+                <p>Esse site foi produzido pelos alunos
+                    Lucas Anael, Manuela Biacca, Ana Clara, Victoria Feitoza, Maria E. Ribeiro e Helena Souza
+                    utilizando a API da Marvel, que nos ofereceu cesso a um vasto universo de informações relacionadas aos icônicos personagens e histórias da Marvel Comics. Desenvolvida pela Marvel Entertainment, essa interface de programação de aplicativos API possibilita a integração de dados detalhados sobre quadrinhos, personagens, eventos, séries e muito mais em aplicações e sites.
+                    Clique na foto do o personagem para descobrir sua história</p>
+            </div>
+
+            <div className={Styles.container}>
+
+                <div className={Styles.card}>
+
+                    <div className={Styles.imgBox}>
+
+                        <Link className={Styles.nav} href="/morbius"><img src="miranha.jpg" width={50} height={50} /></Link>
+
+
+                    </div>
+
+                    <div className={Styles.content}>
+                        <h1>Spider-Man</h1>
+
+                    </div>
+
+                </div>
+                <div className={Styles.card}>
+
+                    <div className={Styles.imgBox}>
+
+                        <Link className={Styles.nav} href="/morbius"><img src="morbius.jpg" width={50} height={50} /></Link>
+
+                    </div>
+
+                    <div className={Styles.content}>
+                        <h1>Morbius</h1>
+
+                    </div>
+
+                </div>
+                <div className={Styles.card}>
+
+                    <div className={Styles.imgBox}>
+
+                        <Link className={Styles.nav} href="/morbius"> <img src="loki.jpg" width={50} height={50} /></Link>
+
+                    </div>
+
+                    <div className={Styles.content}>
+                        <h1>Loki</h1>
+
+                    </div>
+
+                </div>
+                <div className={Styles.card}>
+
+                    <div className={Styles.imgBox}>
+
+                        <Link className={Styles.nav} href="/morbius"> <img src="gamora.jpg" width={50} height={50} /></Link>
+
+                    </div>
+
+                    <div className={Styles.content}>
+                        <h1>Gamora</h1>
+
+                    </div>
+
+                </div>
+                <div className={Styles.card}>
+
+                    <div className={Styles.imgBox}>
+
+                        <Link className={Styles.nav} href="/morbius"><img src="blackwidow.jpg" width={50} height={50} /></Link>
+
+                    </div>
+
+                    <div className={Styles.content}>
+                        <h1>Black Widow</h1>
+
+                    </div>
+
+                </div>
+                <div className={Styles.card}>
+
+                    <div className={Styles.imgBox}>
+
+                        <Link className={Styles.nav} href="/morbius"> <img src="deadpool.jpg" width={50} height={50} /></Link>
+
+                    </div>
+
+                    <div className={Styles.content}>
+                        <h1>Deadpool</h1>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </>
+
     )
+
 }
 
-export default Home
+export default Initial
