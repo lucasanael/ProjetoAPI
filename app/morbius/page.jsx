@@ -97,7 +97,7 @@ function Morbius() {
         <>
             <div>
                 <div className={Styles.banner}>
-                    <Link className={Styles.nav} href="/initial"><img src='voltarMorbius.png' width={100} height={70} /></Link>
+                    <Link className={Styles.nav} href="/initial"><img src='voltarMorbius.png' width={90} height={60} /></Link>
                 </div>
                 <div className={Styles.faixa}>
                 </div>
@@ -129,7 +129,7 @@ function Morbius() {
                                     src={`${kane.thumbnail.path}.${kane.thumbnail.extension}`}
                                     alt={kane.name}
                                     width={200}
-                                    height={200} />
+                                    height={400} />
                             </li>
                         ))}
                     </ul></div>
@@ -153,6 +153,21 @@ function Morbius() {
 
 
                 <div className={Styles.comicTexto}>
+                    <ul>
+                        {comic.map((comic) => (
+                            <li key={comic.id}>{comic.name}
+                                <Image
+                                    src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
+                                    alt={comic.name}
+                                    width={200}
+                                    height={310} />
+                            </li>
+                        ))}
+                    </ul>
+                    <p>Morbius, o Vampiro Vivo, é um personagem fascinante da Marvel, e sua criação é creditada aos escritores Roy Thomas e o desenhista Gil Kane. A primeira aparição do anti-herói aconteceu em "The Amazing Spider-Man #101" em outubro de 1971. Roy Thomas, renomado por suas contribuições significativas ao Universo Marvel, trouxe sua habilidade narrativa única para dar vida a Morbius. Enquanto isso, Gil Kane, um artista talentoso e prolífico, visualizou o design distintivo do personagem, capturando a essência sombria e trágica do Dr. Michael Morbius. A colaboração entre Thomas e Kane resultou em um personagem memorável que se destaca por sua complexidade moral, oscilando entre sua luta contra a sede de sangue e seu desejo de encontrar uma cura para sua condição vampírica. A criação de Morbius pelos talentosos Thomas e Kane contribuiu significativamente para a diversidade de personagens dentro do vasto universo da Marvel Comics.</p>
+                    </div>
+
+                <div className={Styles.comicTexto2}>
                     <ul>
                         {comic.map((comic) => (
                             <li key={comic.id}>{comic.name}

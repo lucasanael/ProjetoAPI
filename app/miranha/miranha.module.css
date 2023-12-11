@@ -1,6 +1,6 @@
 .banner {
-    background-image: url(../../public/bannerMorbius.jpeg);
-    height: 300px;
+    background-image: url(../../public/miranhabanner2.png);
+    height: 450px;
     background-repeat: no-repeat;
 }
 
@@ -19,23 +19,13 @@
 }
 .comicTexto {
     color: white;
-    background-color: #0f834d;
+    background-color: rgb(120, 11, 11);
     padding: 90px;
     margin-left: 10%;
     margin-right: 5%;
     margin-bottom: 10%;
     display: flex;
     flex-direction: row;
-   
-}
-.comicTexto {
-    color: white;
-    background-color: #0f834d;
-    padding: 90px;
-    margin-left: 10%;
-    margin-right: 5%;
-    margin-bottom: 10%;
-  
    
 }
 .comicTexto p {
@@ -47,7 +37,7 @@
 
 .creatorTexto {
     color: white;
-    background-color: #0f834d;
+    background-color: rgb(120, 11, 11);
     padding: 90px;
     margin-left: 10%;
     margin-right: 5%;
@@ -65,7 +55,7 @@
 }
 
 .faixa {
-    background-color: #0f834d;
+    background-color: rgb(120, 11, 11);
     height: 20px;
 }
 
@@ -87,5 +77,5 @@
 
 .name {
     margin-top: 2%;
-    margin-left: 18%;
+    margin-left: 15%;
 }
