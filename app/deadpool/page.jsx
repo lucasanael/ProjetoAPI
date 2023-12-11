@@ -11,7 +11,7 @@ const idDeadpool = "1009268"
 const idNicieza = "6001"
 const idLiefeld = "571"
 const idComic = "93037"
-const idSeries = ""
+const idSeries = "2004"
 
 const timestamp = new Date().getTime()
 const hash = generationMarvelHash(timestamp, privateKey, publicKey)
@@ -24,7 +24,7 @@ const imgLiefeld = `http://gateway.marvel.com/v1/public/creators/${idLiefeld}?li
 
 const imgComic = `http://gateway.marvel.com/v1/public/comics/${idComic}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`;
 
-const imgSeries = ``
+const imgSeries = `http://gateway.marvel.com/v1/public/series/${idComic}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`
 function Deadpool() {
 
     const [deadpool, setDeadpool] = useState([])

@@ -101,7 +101,7 @@ function Gamora() {
         </ul>
       </div>
 
-      <h1 className={Styles.name}>Gamora</h1>
+      <h1 className={Styles.name}>GAMORA</h1>
 
       <div className={Styles.creator}>
         <div className={Styles.creatorPicture}>
