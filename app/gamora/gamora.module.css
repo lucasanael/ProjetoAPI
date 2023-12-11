@@ -1,0 +1,83 @@
+.banner {
+    background-image: url(../../public/bannerGamora.jpg);
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.comic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1%;
+   
+}
+.comicTexto {
+    color: white;
+    background-color: #cb9630;
+    padding: 90px;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+   
+}
+.comicTexto p {
+    margin-left: 10%;
+    margin-top: 5%;
+
+   
+}
+
+.creatorTexto {
+    color: white;
+    background-color: #cb9630;
+    padding: 90px;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 8%;
+}
+
+.creatorPicture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+.creatorPicture div {
+    margin-left: 5%;
+}
+
+.faixa {
+    background-color: #cb9630;
+    height: 20px;
+}
+
+.imgPerfil {
+    width: 300px;
+
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: -10%;
+    margin-left: 10%;
+}
+
+.imgPerfil img {
+    width: 100%;
+    margin-top:  -7%;
+    height: auto;
+    display: block;
+}
+
+.name {
+    margin-top: 2%;
+    margin-left: 14%;
+}
