@@ -4,50 +4,82 @@
     background-repeat: no-repeat;
 }
 
+.ajuste {
+    margin-top: 38%;
+}
+
+.nav img{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
 .creator {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10%;
 }
-.comic {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 1%;
-   
-}
+
 .comicTexto {
     color: white;
-    background-color: #0f834d;
+    background-color: #63A463;
     padding: 90px;
     margin-left: 10%;
     margin-right: 5%;
     margin-bottom: 10%;
     display: flex;
     flex-direction: row;
-   
+
 }
-.comicTexto {
-    color: white;
-    background-color: #0f834d;
-    padding: 90px;
-    margin-left: 10%;
-    margin-right: 5%;
-    margin-bottom: 10%;
-  
-   
-}
+
 .comicTexto p {
     margin-left: 10%;
     margin-top: 5%;
 
-   
+
+}
+
+.seriesTexto {
+    color: white;
+    background-color: #63A463;
+    padding: 90px;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.seriesTexto p {
+    margin-left: 10%;
+    margin-top: 5%;
+
+
+}
+
+.seriesTexto {
+    color: white;
+    background-color: #63A463;
+    padding: 90px;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.seriesTexto p {
+    margin-left: 10%;
+    margin-top: 5%;
+
+
 }
 
 .creatorTexto {
     color: white;
-    background-color: #0f834d;
+    background-color: #63A463;
     padding: 90px;
     margin-left: 10%;
     margin-right: 5%;
@@ -60,12 +92,13 @@
     justify-content: space-around;
     margin-left: 10%;
 }
+
 .creatorPicture div {
     margin-left: 5%;
 }
 
 .faixa {
-    background-color: #0f834d;
+    background-color: #63A463;
     height: 20px;
 }
 

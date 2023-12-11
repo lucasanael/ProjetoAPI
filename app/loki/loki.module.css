@@ -13,13 +13,12 @@
     margin-top: 10%;
 }
 
-.comic {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.nav img{
     margin-top: 1%;
-
+    margin-left: 1%;
 }
+
+
 
 .comicTexto {
     color: white;

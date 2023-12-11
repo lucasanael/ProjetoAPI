@@ -11,7 +11,7 @@ function Initial() {
     return (
         <>
             <div className={Styles.marvel}>
-                <Link className={Styles.nav} href="/grupo"><img src='iconGrupo.png' width={40} height={30} /></Link>
+                <Link className={Styles.nav} href="/grupo"><img src='iconGrupo.png' width={50} height={50} /></Link>
             </div>
 
 

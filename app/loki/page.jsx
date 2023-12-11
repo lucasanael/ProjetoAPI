@@ -30,7 +30,7 @@ const imgSeries = `http://gateway.marvel.com/v1/public/series/${idSeries}?limit=
 
 function Loki() {
 
-    const [morbius, setMorbius] = useState([])
+    const [loki, setLoki] = useState([])
     const [lee, setLee] = useState([])
     const [kirby, setKirby] = useState([])
     const [lieber, setLieber] = useState([])
@@ -39,12 +39,12 @@ function Loki() {
 
     useEffect(() => {
 
-        const getMorbius = async () => {
+        const getLoki = async () => {
 
             try {
                 const reposta = await fetch(imgLoki)
                 const data = await reposta.json()
-                setMorbius(data.data.results)
+                setLoki(data.data.results)
             }
             catch (error) {
 
@@ -52,7 +52,7 @@ function Loki() {
             }
         }
 
-        getMorbius()
+        getLoki()
 
 
         const getlee = async () => {
@@ -139,11 +139,11 @@ function Loki() {
 
             <div>
                 <ul>
-                    {morbius.map((morbius) => (
-                        <li className={Styles.imgPerfil} key={morbius.id}>{morbius.name}
+                    {loki.map((loki) => (
+                        <li className={Styles.imgPerfil} key={loki.id}>{loki.name}
                             <Image
-                                src={`${morbius.thumbnail.path}.${morbius.thumbnail.extension}`}
-                                alt={morbius.name}
+                                src={`${loki.thumbnail.path}.${loki.thumbnail.extension}`}
+                                alt={loki.name}
                                 width={300}
                                 height={300} />
                         </li>
