@@ -97,7 +97,7 @@ function Morbius() {
         <>
             <div>
                 <div className={Styles.banner}>
-                    <Link className={Styles.nav} href="/initial"><img src='voltarMorbius.png' width={90} height={60} /></Link>
+                    <Link className={Styles.nav} href="/initial"><img src='voltarRed.png' width={35} height={30} /></Link>
                 </div>
                 <div className={Styles.faixa}>
                 </div>

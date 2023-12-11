@@ -11,7 +11,7 @@ function Initial() {
     return (
         <>
             <div className={Styles.marvel}>
-                <Link className={Styles.nav} href="/morbius"><img src='iconGrupo.png' width={40} height={30} /></Link>
+                <Link className={Styles.nav} href="/grupo"><img src='iconGrupo.png' width={40} height={30} /></Link>
             </div>
 
 
@@ -28,7 +28,7 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href="/morbius"><img src="miranha.jpg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href="/miranha"><img src="miranha.jpg" width={50} height={50} /></Link>
 
 
                     </div>
@@ -57,7 +57,7 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href="/morbius"> <img src="loki.jpg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href="/loki"> <img src="loki.jpg" width={50} height={50} /></Link>
 
                     </div>
 
@@ -71,7 +71,7 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href="/morbius"> <img src="gamora.jpg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href="/gamora"> <img src="gamora.jpg" width={50} height={50} /></Link>
 
                     </div>
 
@@ -99,7 +99,7 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href="/morbius"> <img src="deadpool.jpg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href="/deadpool"> <img src="deadpool.jpg" width={50} height={50} /></Link>
 
                     </div>
 

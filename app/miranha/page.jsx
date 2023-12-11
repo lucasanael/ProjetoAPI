@@ -81,7 +81,7 @@ function Miranha() {
         <>
             <div>
                 <div className={Styles.banner}>
-                    <Link className={Styles.nav} href="/initial"><img src='voltarMiranha.png' width={60} height={40} /></Link>
+                    <Link className={Styles.nav} href="/initial"><img src='voltarPreto.png' width={30} height={30} /></Link>
                 </div>
                 <div className={Styles.faixa}>
                 </div>
