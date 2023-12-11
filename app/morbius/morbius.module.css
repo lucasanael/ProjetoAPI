@@ -19,7 +19,7 @@
 }
 .comicTexto {
     color: white;
-    background-color: #336B60;
+    background-color: #0f834d;
     padding: 90px;
     margin-left: 10%;
     margin-right: 5%;
@@ -37,7 +37,7 @@
 
 .creatorTexto {
     color: white;
-    background-color: #336B60;
+    background-color: #0f834d;
     padding: 90px;
     margin-left: 10%;
     margin-right: 5%;
@@ -55,7 +55,7 @@
 }
 
 .faixa {
-    background-color: #336B60;
+    background-color: #0f834d;
     height: 20px;
 }
 
@@ -70,6 +70,7 @@
 
 .imgPerfil img {
     width: 100%;
+    margin-top: -6.5%;
     height: auto;
     display: block;
 }
