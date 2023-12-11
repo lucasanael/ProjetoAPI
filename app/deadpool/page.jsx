@@ -89,6 +89,20 @@ function Deadpool() {
             }
         }
         getComic()
+
+        const getSeries = async () => {
+
+            try {
+                const reposta = await fetch(imgComic)
+                const data = await reposta.json()
+                setComic(data.data.results)
+            }
+            catch (error) {
+
+                console.error('Erro ao buscar dados da API Marvel', error)
+            }
+        }
+        getSeries()
     }, []);
 
     return (
@@ -134,7 +148,7 @@ function Deadpool() {
                         ))}
                     </ul>
                 </div>
-                <div className={Styles.creatorTexto}><p>A alienígena de pele verde apareceu pela primeira vez em Strange Tales (1951) #180, publicada em 1975. A publicação tem roteiro e arte assinados por Jim Starlin, criador da personagem. Gamora é filha adotiva de Thanos, que a criou para ser a “mulher mais mortal da Galáxia”. Isso aconteceu após o louco Titã ver os pais da menina serem mortos e todo o povo alienígena Zen-Whoberi ser eliminado da existência. </p></div>
+                <div className={Styles.creatorTexto}><p>Criado pelo artista/escritor Rob Liefeld e pelo escritor Fabian Nicieza, Deadpool fez sua primeira aparição nas páginas da capa de The New Mutants #98 datada de fevereiro de 1991. De acordo com Nicieza, Liefeld criou o o design visual e o nome do personagem, e o próprio Nicieza criou os maneirismos de fala do personagem. </p></div>
 
             </div>
 
@@ -142,7 +156,7 @@ function Deadpool() {
 
 
                 <div className={Styles.comicTexto}><ul>
-                    {Deadpool.map((deapool) => (
+                    {deadpool.map((deapool) => (
                         <li key={deapool.id}>{deapool.name}
                             <Image
                                 src={`${deapool.thumbnail.path}.${deapool.thumbnail.extension}`}
@@ -152,8 +166,20 @@ function Deadpool() {
                         </li>
                     ))}
                 </ul>
-                    <p>OUT OF TIME AND OUT FOR REVENGE! The story continues as we follow GAMORA to the doomed planet that is UBLIEX. Perched on the brink of a black hole, its inhabitants count down the hours to their planet's imminent demise as it is swallowed up by the approaching Singularity. Will Gamora find her revenge among the inhabitants of Ubliex before the black hole consumes them all? Or will the citizens of this world - including a doomsday cult, junkie bounty hunters and a young woman with a tremendous destiny - stop her first?</p></div>
-
+                    <p>HEART-BROKEN! Things aren't looking great for Deadpool and his new paramour, Valentine Vuong. You know how it can be in love - you just want to be together, but there is always some secret society of killers that gets in the way and your heart and/or glass arms get shattered.</p></div>
+                    <ul>
+            {series.map((series) => (
+              <li key={series.id}>
+                {series.name}
+                <Image
+                  src={`${series.thumbnail.path}.${series.thumbnail.extension}`}
+                  alt={series.name}
+                  width={200}
+                  height={200}
+                />
+              </li>
+            ))}
+          </ul>
             </div>
 
         </>
