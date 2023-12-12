@@ -106,3 +106,131 @@
     transition-delay: 0.3s;
     margin-top: 20%;
 }
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10%;}
+
+    @media only screen and (max-width: 720px) 
+    {
+
+        .marvel {
+            background-image: url(../../public/studiosMarvel.png);
+            background-repeat: no-repeat;
+            height: 200px;
+            background-size: cover;
+            margin-bottom: 10%;
+           
+        }
+        
+        .nav img {
+            margin-top: 1%;
+            margin-left: 1%;
+        }
+        
+        
+        
+        .imgBox {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        
+        .imgBox img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .texto {
+            color: white;
+            background-color: #800B00;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: justify;
+            margin-top: -5%;
+            margin-bottom: 10%;
+            padding: 5%;
+        }
+        
+        .container {
+            position: relative;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px;
+            margin: 0 auto;
+        }
+        
+        .container .card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background-color: #dad2bc00;
+            margin: 2% 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: .3s ease-in-out;
+        
+        }
+        
+        .content h1 {
+            font-size: 1.5em;
+        }
+        
+        .container .card:hover {
+            height: 400px;
+            background-color: #800B00;
+        
+        }
+        
+        .container .card .imgBx {
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            top: 15px;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container .card .imgBx img {
+            width: 100%;
+            border-radius: 30px;
+        }
+        
+        .container .card .content {
+            position: relative;
+            padding: 10px 15px;
+            text-align: center;
+            color: #4b4e58;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            margin-top: 20%;
+        }
+        
+        .container .card:hover .content {
+            visibility: visible;
+            opacity: 1;
+            margin-left: 10px;
+            transition-delay: 0.3s;
+            margin-top: 20%;
+        }
+        
+        .logo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 10%;}
+        
+
+    }
