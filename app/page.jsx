@@ -1,6 +1,6 @@
 
 import Link from "next/link"
-import Styles from "@/app/initial/page.module.css"
+import Styles from "@/app/mycss/page.module.css"
 import Image from "next/image"
 
 
