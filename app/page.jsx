@@ -1,6 +1,6 @@
 
 import Link from "next/link"
-import Styles from "@/app/initial/page.module.css"
+import Styles from "@/app/mycss/page.module.css"
 import Image from "next/image"
 
 
@@ -148,7 +148,7 @@ function Initial() {
 
             
             <div className={Styles.logo}>
-                    <Link  href="/initial">
+                    <Link  href="/">
                     <Image
                             width={100}
                             height={35}

@@ -14,7 +14,7 @@ function Initial() {
 
 <div>
                 <div className={Styles.banner}>
-                <Link className={Styles.nav} href="/initial"><Image
+                <Link className={Styles.nav} href="/"><Image
                             width={30}
                             height={30}
                             src='/voltarBranco.png'
@@ -31,8 +31,8 @@ function Initial() {
                     <div className={Styles.imgBox}>
 
                         <Link className={Styles.nav} href=""><Image
-                            width={50}
-                            height={50}
+                            width={500}
+                            height={500}
                             src='/ana.jpeg'
                             alt="Ana" /></Link>
 
@@ -50,8 +50,8 @@ function Initial() {
                     <div className={Styles.imgBlack}>
 
                         <Link className={Styles.nav} href=""><Image
-                            width={50}
-                            height={50}
+                            width={500}
+                            height={500}
                             src='/helena.jpeg'
                             alt="Helena" /></Link>
 
@@ -69,8 +69,8 @@ function Initial() {
                     <div className={Styles.imgBox}>
 
                         <Link className={Styles.nav} href=""><Image
-                            width={50}
-                            height={50}
+                            width={500}
+                            height={500}
                             src='/lucas.jpeg'
                             alt="Lucas" /></Link>
 
@@ -87,8 +87,8 @@ function Initial() {
                     <div className={Styles.imgBox}>
 
                         <Link className={Styles.nav} href=""><Image
-                            width={50}
-                            height={50}
+                            width={500}
+                            height={500}
                             src='/manu.jpeg'
                             alt="Manuela" /></Link>
 
@@ -105,8 +105,8 @@ function Initial() {
                     <div className={Styles.imgBlack}>
 
                         <Link className={Styles.nav} href=""><Image
-                            width={50}
-                            height={50}
+                            width={500}
+                            height={500}
                             src='/mariae.jpeg'
                             alt="Maria" /></Link>
 
@@ -126,8 +126,8 @@ function Initial() {
 
                         <Link className={Styles.nav} href="">
                         <Image
-                            width={50}
-                            height={50}
+                            width={500}
+                            height={500}
                             src='/vic.jpeg'
                             alt="Victoria" /></Link>
 
@@ -145,7 +145,7 @@ function Initial() {
 
 
                      <div className={Styles.logo}>
-                    <Link  href="/initial"><Image
+                    <Link  href="/"><Image
                             width={100}
                             height={35}
                             src='/marvel.jpg'

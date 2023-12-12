@@ -4,29 +4,29 @@
     height: 800px;
     background-size: cover;
    
-}
-
-.nav img {
+  }
+  
+  .nav img {
     margin-top: 1%;
     margin-left: 1%;
-}
-
-
-
-.imgBox {
+  }
+  
+  
+  
+  .imgBox {
     width: 200px;
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
-}
-
-.imgBox img {
+  }
+  
+  .imgBox img {
     width: 100%;
     height: auto;
     display: block;
-}
-
-.texto {
+  }
+  
+  .texto {
     color: white;
     background-color: #800B00;
     margin-left: 10%;
@@ -35,9 +35,9 @@
     margin-top: -5%;
     margin-bottom: 10%;
     padding: 5%;
-}
-
-.container {
+  }
+  
+  .container {
     position: relative;
     width: 90%;
     display: flex;
@@ -46,9 +46,9 @@
     flex-wrap: wrap;
     padding: 30px;
     margin: 0 auto;
-}
-
-.container .card {
+  }
+  
+  .container .card {
     position: relative;
     width: 300px;
     height: 400px;
@@ -59,20 +59,20 @@
     align-items: center;
     justify-content: center;
     transition: .3s ease-in-out;
-
-}
-
-.content h1 {
+  
+  }
+  
+  .content h1 {
     font-size: 1.5em;
-}
-
-.container .card:hover {
+  }
+  
+  .container .card:hover {
     height: 400px;
     background-color: #800B00;
-
-}
-
-.container .card .imgBx {
+  
+  }
+  
+  .container .card .imgBx {
     position: absolute;
     width: 260px;
     height: 260px;
@@ -81,14 +81,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container .card .imgBx img {
+  }
+  
+  .container .card .imgBx img {
     width: 100%;
     border-radius: 30px;
-}
-
-.container .card .content {
+  }
+  
+  .container .card .content {
     position: relative;
     padding: 10px 15px;
     text-align: center;
@@ -97,25 +97,25 @@
     opacity: 0;
     transition: 0.3s ease-in-out;
     margin-top: 20%;
-}
-
-.container .card:hover .content {
+  }
+  
+  .container .card:hover .content {
     visibility: visible;
     opacity: 1;
     margin-left: 10px;
     transition-delay: 0.3s;
     margin-top: 20%;
-}
-
-.logo{
+  }
+  
+  .logo{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 10%;}
-
+  
     @media only screen and (max-width: 720px) 
     {
-
+  
         .marvel {
             background-image: url(../../public/studiosMarvel.png);
             background-repeat: no-repeat;
@@ -233,5 +233,5 @@
             justify-content: space-around;
             margin-bottom: 10%;}
         
-
+  
     }

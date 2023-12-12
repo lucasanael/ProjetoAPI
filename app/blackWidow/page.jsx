@@ -109,7 +109,7 @@ function Widow() {
         <>
             <div>
                 <div className={Styles.banner}>
-                    <Link className={Styles.nav} href="/initial">
+                    <Link className={Styles.nav} href="/">
                         <Image
                             width={30}
                             height={30}
