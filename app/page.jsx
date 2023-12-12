@@ -114,7 +114,7 @@ function Initial() {
                         <Link className={Styles.nav} href="/blackWidow"><Image
                             width={500}
                             height={500}
-                            src='/blackWidow.jpg'
+                            src='/blackwidow.jpg'
                             alt="Black Widow" /></Link>
 
                     </div>
