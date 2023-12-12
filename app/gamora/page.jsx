@@ -125,7 +125,6 @@ function Gamora() {
       </div>
 
       
-        
         <div className={Styles.comic}>
           <div className={Styles.comicTexto}>
             <ul>
@@ -136,28 +135,41 @@ function Gamora() {
                     src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
                     alt={comic.name}
                     width={200}
-                    height={200}
+                    height={310}
                   />
                 </li>
               ))}
             </ul>
             <p>OUT OF TIME AND OUT FOR REVENGE! The story continues as we follow GAMORA to the doomed planet that is UBLIEX. Perched on the brink of a black hole, its inhabitants count down the hours to their planet's imminent demise as it is swallowed up by the approaching Singularity. Will Gamora find her revenge among the inhabitants of Ubliex before the black hole consumes them all? Or will the citizens of this world - including a doomsday cult, junkie bounty hunters and a young woman with a tremendous destiny - stop her first?</p>
-            <ul>
-            {series.map((series) => (
-              <li key={series.id}>
-                {series.name}
-                <Image
-                  src={`${series.thumbnail.path}.${series.thumbnail.extension}`}
-                  alt={series.name}
-                  width={200}
-                  height={200}
-                />
-              </li>
-            ))}
-          </ul>
+            
           </div>
         </div>
 
+        <div className={Styles.comic}>
+          <div className={Styles.seriesTexto}>
+            <ul>
+              {series.map((series) => (
+                <li key={comic.id}>
+                  {series.name}
+                  <Image
+                    src={`${series.thumbnail.path}.${series.thumbnail.extension}`}
+                    alt={series.name}
+                    width={400}
+                    height={320}
+                  />
+                </li>
+              ))}
+            </ul>
+            <p>OUT OF TIME AND OUT FOR REVENGE! The story continues as we follow GAMORA to the doomed planet that is UBLIEX. Perched on the brink of a black hole, its inhabitants count down the hours to their planet's imminent demise as it is swallowed up by the approaching Singularity. Will Gamora find her revenge among the inhabitants of Ubliex before the black hole consumes them all? Or will the citizens of this world - including a doomsday cult, junkie bounty hunters and a young woman with a tremendous destiny - stop her first?</p>
+            
+          </div>
+        </div>
+
+
+
+
+
+       
         
      
     </>

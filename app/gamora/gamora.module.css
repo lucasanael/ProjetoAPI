@@ -85,3 +85,22 @@
     margin-top: 2%;
     margin-left: 14%;
 }
+
+.seriesTexto {
+    color: white;
+    background-color: #cb9630;
+    padding: 90px;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.seriesTexto p {
+    margin-left: 10%;
+    margin-top: 5%;
+
+
+}
