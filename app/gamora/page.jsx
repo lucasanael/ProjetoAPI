@@ -83,7 +83,8 @@ function Gamora() {
           <Link className={Styles.nav} href="/initial"> <Image
                             width={30}
                             height={30}
-                            src='/voltarPreto.png' /></Link>
+                            src='/voltarPreto.png'
+                            alt="Voltar" /></Link>
         </div>
         <div className={Styles.faixa}></div>
       </div>

@@ -17,7 +17,8 @@ function Initial() {
                 <Link className={Styles.nav} href="/initial"><Image
                             width={30}
                             height={30}
-                            src='/voltarBranco.png' /></Link>
+                            src='/voltarBranco.png'
+                            alt="Grupo" /></Link>
                 </div>
                 <div className={Styles.faixa}>
                 </div>
@@ -29,7 +30,11 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href=""><img src="ana.jpeg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href=""><Image
+                            width={50}
+                            height={50}
+                            src='/ana.jpeg'
+                            alt="Ana" /></Link>
 
 
                     </div>
@@ -44,7 +49,11 @@ function Initial() {
 
                     <div className={Styles.imgBlack}>
 
-                        <Link className={Styles.nav} href=""><img src="helena.jpeg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href=""><Image
+                            width={50}
+                            height={50}
+                            src='/helena.jpeg'
+                            alt="Helena" /></Link>
 
                     </div>
 
@@ -59,7 +68,11 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href=""> <img src="lucas.jpeg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href=""><Image
+                            width={50}
+                            height={50}
+                            src='/lucas.jpeg'
+                            alt="Lucas" /></Link>
 
                     </div>
 
@@ -73,7 +86,11 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href=""> <img src="manu.jpeg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href=""><Image
+                            width={50}
+                            height={50}
+                            src='/manu.jpeg'
+                            alt="Manuela" /></Link>
 
                     </div>
 
@@ -87,7 +104,11 @@ function Initial() {
 
                     <div className={Styles.imgBlack}>
 
-                        <Link className={Styles.nav} href=""><img src="mariae.jpeg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href=""><Image
+                            width={50}
+                            height={50}
+                            src='/mariae.jpeg'
+                            alt="Maria" /></Link>
 
                     </div>
 
@@ -103,7 +124,12 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href=""> <img src="vic.jpeg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href="">
+                        <Image
+                            width={50}
+                            height={50}
+                            src='/vic.jpeg'
+                            alt="Victoria" /></Link>
 
                     </div>
 
@@ -119,7 +145,11 @@ function Initial() {
 
 
                      <div className={Styles.logo}>
-                    <Link  href="/initial"><img src='marvel.jpg' width={100} height={35} /></Link>
+                    <Link  href="/initial"><Image
+                            width={100}
+                            height={35}
+                            src='/marvel.jpg'
+                            alt="Marvel" /></Link>
                     </div>
 
         </>

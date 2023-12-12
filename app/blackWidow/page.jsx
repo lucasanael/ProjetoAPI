@@ -113,7 +113,8 @@ function Widow() {
                         <Image
                             width={30}
                             height={30}
-                            src='/voltarBranco.png' /></Link>
+                            src='/voltarBranco.png'
+                            alt="Voltar" /></Link>
                 </div>
                 <div className={Styles.faixa}>
                 </div>
