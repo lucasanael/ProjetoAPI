@@ -1,7 +1,9 @@
 .marvel {
-    background-image: url(../../public/studiosMarvel.jpg);
+    background-image: url(../../public/studiosMarvel.png);
     background-repeat: no-repeat;
-    height: 984px;
+    height: 800px;
+    background-size: cover;
+   
 }
 
 .nav img {
