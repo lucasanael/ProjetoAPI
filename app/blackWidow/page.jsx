@@ -193,7 +193,7 @@ function Widow() {
                                 </li>
                             ))}
                         </ul>
-                        <p>The bloody conclusion to \"Die by the Blade\"! Guns. Explosives. Widow's bites. Good old-fashioned hand-to-hand. Natasha Romanoff is an expert in just about every form of combat known to humankind…and it's not enough. The Living Blade will not let his query escape this time. San Francisco's golden gates slam shut for the superspy as Kelly Thompson and Elena Casagrande delivers another stunning visual feast in their Eisner-winning epic!</p>
+                        <p>A Viúva Negra e sua equipe descobrem a origem dos poderes do Olio – e o destino sombrio daqueles que são escravos do Apogee, incluindo a protegida de Natasha, Lucy, cujo tempo está se esgotando. Natasha e Apogee se enfrentam pelo futuro de São Francisco, mas Natasha arriscará tudo para proteger sua cidade e a nova vida que construiu lá.</p>
                     </div>
                 </div>
 
@@ -210,7 +210,7 @@ function Widow() {
                                 </li>
                             ))}
                         </ul>
-                        <p>The bloody conclusion to \"Die by the Blade\"! Guns. Explosives. Widow's bites. Good old-fashioned hand-to-hand. Natasha Romanoff is an expert in just about every form of combat known to humankind…and it's not enough. The Living Blade will not let his query escape this time. San Francisco's golden gates slam shut for the superspy as Kelly Thompson and Elena Casagrande delivers another stunning visual feast in their Eisner-winning epic!</p>
+                        <p>"Vingadores: A Era de Ultron" (2013) é um épico cinematográfico que faz parte do Universo Cinematográfico da Marvel (MCU). Dirigido por Joss Whedon, o filme mergulha os espectadores em um confronto épico entre os Vingadores e um inimigo inesperado, Ultron. Tony Stark, interpretado por Robert Downey Jr., inadvertidamente desencadeia uma ameaça tecnológica autônoma ao criar Ultron, um programa de inteligência artificial destinado a proteger a Terra. No entanto, Ultron, personificado pela voz envolvente de James Spader, se torna uma ameaça global com a intenção de exterminar a humanidade para salvar o planeta. </p>
                     </div>
                 </div>
             
