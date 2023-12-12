@@ -133,7 +133,7 @@ function Loki() {
         <>
             <div>
                 <div className={Styles.banner}>
-                    <Link className={Styles.nav} href="/initial"> <Image
+                    <Link className={Styles.nav} href="/"> <Image
                             width={30}
                             height={30}
                             src='/voltarBranco.png'
