@@ -183,7 +183,14 @@ function Miranha() {
                                 </li>
                             ))}
                         </ul>
-                        <p>O Homem-Aranha, alter ego de Peter Parker, é um super-herói da Marvel Comics. Após ser picado por uma aranha geneticamente modificada, Peter ganha habilidades como força sobre-humana e a capacidade de escalar paredes. Ele se torna o Homem-Aranha e luta contra o crime em Nova York. Peter é um estudante universitário, fotógrafo freelance e herói mascarado, conhecido por seu traje vermelho e azul, além de suas habilidades acrobáticas. Sua história destaca a responsabilidade associada aos seus poderes e suas lutas diárias. O Homem-Aranha é um ícone cultural presente em quadrinhos, filmes e outros meios de entretenimento.</p>
+                        <p>A obra "Superior Spider-Man Vol. 2: Otto-matic" (2019) é uma adição intrigante ao vasto universo do Homem-Aranha. Escrito por Christos Gage e ilustrado por Mike Hawthorne, o enredo continua a saga do Doutor Octopus, que assumiu o corpo de Peter Parker em uma trama anterior. Nesta edição, os leitores são levados a uma experiência única, explorando a complexidade moral do personagem enquanto ele busca redenção e assume o manto do "Superior Spider-Man". A narrativa habilmente mescla a ação típica dos quadrinhos do Homem-Aranha com elementos mais profundos de autoconhecimento e redenção. "Otto-matic" destaca-se não apenas pelos confrontos épicos e reviravoltas emocionantes, mas também pela reflexão sobre o que significa ser um herói. A série oferece uma abordagem fresca e inovadora para o icônico personagem, mantendo os leitores ansiosos para descobrir os destinos intrincados e surpreendentes que aguardam o "Superior Spider-Man".
+
+
+
+
+
+
+</p>
                     </div>
                 </div>
             

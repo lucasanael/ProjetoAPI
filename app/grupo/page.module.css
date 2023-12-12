@@ -9,6 +9,26 @@
     overflow: hidden;
     border-radius: 50%; 
   }
+
+  .imgBlack{
+    width: 200px; 
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%; 
+
+  }
+  .imgBlack img{
+    width: 100%; 
+    height: auto;
+    display: block; 
+    margin-top: -1%; 
+
+  }
+
+  .imgBlack img:hover{
+   filter: grayscale(100%); 
+
+  }
   
   .imgBox img {
     width: 100%; 

@@ -17,9 +17,8 @@ function Initial() {
 
             <div className={Styles.texto}>
                 <p>Esse site foi produzido pelos alunos
-                    Lucas Anael, Manuela Biacca, Ana Clara, Victoria Feitoza, Maria E. Ribeiro e Helena Souza
-                    utilizando a API da Marvel, que nos ofereceu cesso a um vasto universo de informações relacionadas aos icônicos personagens e histórias da Marvel Comics. Desenvolvida pela Marvel Entertainment, essa interface de programação de aplicativos API possibilita a integração de dados detalhados sobre quadrinhos, personagens, eventos, séries e muito mais em aplicações e sites.
-                    Clique na foto do o personagem para descobrir sua história</p>
+                    Lucas Anael, Manuela Biacca, Ana Clara Lobrigato, Victoria Feitoza, Maria E. Ribeiro e Helena Souza,
+                    utilizando a API da Marvel, que nos ofereceu acesso a um vasto universo de informações relacionadas aos icônicos personagens e histórias da Marvel Comics. Desenvolvida pela Marvel Entertainment, essa interface pública fornece acesso aos metadados dos seus quadrinhos, suportando autenticação, versionamento, recuperação de coleções de recursos ou recursos específicos pelo ID, cruzamento de origens de solicitações, compressões e tags utilizadas para evitar o retorno da mesma resposta mais de uma vez, se o conteúdo não mudou desde a primeira requisição.</p>
             </div>
 
             <div className={Styles.container}>

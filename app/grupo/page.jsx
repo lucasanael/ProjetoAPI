@@ -38,7 +38,7 @@ function Initial() {
                 </div>
                 <div className={Styles.card}>
 
-                    <div className={Styles.imgBox}>
+                    <div className={Styles.imgBlack}>
 
                         <Link className={Styles.nav} href=""><img src="helena.jpeg" width={50} height={50} /></Link>
 
@@ -81,7 +81,7 @@ function Initial() {
                 </div>
                 <div className={Styles.card}>
 
-                    <div className={Styles.imgBox}>
+                    <div className={Styles.imgBlack}>
 
                         <Link className={Styles.nav} href=""><img src="mariae.jpeg" width={50} height={50} /></Link>
 
