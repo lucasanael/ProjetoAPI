@@ -111,6 +111,12 @@ function Initial() {
 
             </div>
 
+            
+            <div className={Styles.logo}>
+                    <Link  href="/initial"><img src='marvel.jpg' width={100} height={35} /></Link>
+                    </div>
+
+
         </>
 
     )
