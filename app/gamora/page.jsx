@@ -80,7 +80,10 @@ function Gamora() {
     <>
       <div>
         <div className={Styles.banner}>
-          <Link className={Styles.nav} href="/initial"><img src='voltarPreto.png' width={30} height={30} /></Link>
+          <Link className={Styles.nav} href="/initial"> <Image
+                            width={30}
+                            height={30}
+                            src='/voltarPreto.png' /></Link>
         </div>
         <div className={Styles.faixa}></div>
       </div>

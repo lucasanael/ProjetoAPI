@@ -96,7 +96,10 @@ function Miranha() {
         <>
             <div>
                 <div className={Styles.banner}>
-                    <Link className={Styles.nav} href="/initial"><img src='voltarBranco.png' width={30} height={30} /></Link>
+                    <Link className={Styles.nav} href="/initial"> <Image
+                            width={30}
+                            height={30}
+                            src='/voltarBranco.png' /></Link>
                 </div>
                 <div className={Styles.faixa}>
                 </div>
