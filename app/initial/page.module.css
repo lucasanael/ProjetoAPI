@@ -1,28 +1,28 @@
-.nav {
-
-    margin-top: 20%;
-
-}
-
 .marvel {
     background-image: url(../../public/studiosMarvel.jpg);
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     height: 984px;
 }
 
+.nav img {
+    margin-top: 1%;
+    margin-left: 1%;
+}
 
-.imgBox{
-    width: 200px; 
+
+
+.imgBox {
+    width: 200px;
     height: 200px;
     overflow: hidden;
-    border-radius: 50%; 
-  }
-  
-  .imgBox img {
-    width: 100%; 
+    border-radius: 50%;
+}
+
+.imgBox img {
+    width: 100%;
     height: auto;
-    display: block; 
-  }
+    display: block;
+}
 
 .texto {
     color: white;
@@ -57,16 +57,16 @@
     align-items: center;
     justify-content: center;
     transition: .3s ease-in-out;
-  
+
 }
 
-.content h1{
+.content h1 {
     font-size: 1.5em;
 }
 
 .container .card:hover {
     height: 400px;
-    background-color:  #800B00;
+    background-color: #800B00;
 
 }
 
@@ -83,7 +83,7 @@
 
 .container .card .imgBx img {
     width: 100%;
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
 .container .card .content {
