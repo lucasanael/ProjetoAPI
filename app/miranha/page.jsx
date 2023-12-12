@@ -13,6 +13,7 @@ const idMiranha = "1009610"
 const idLee = "30"
 const idDitko = "32"
 const idComic = "21171"
+const idSeries = "26024"
 
 const timestamp = new Date().getTime()
 const hash = generationMarvelHash(timestamp, privateKey, publicKey)
@@ -21,6 +22,7 @@ const imgMiranha = `http://gateway.marvel.com/v1/public/characters/${idMiranha}?
 const imgLee = `http://gateway.marvel.com/v1/public/creators/${idLee}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`;
 const imgDitko = `http://gateway.marvel.com/v1/public/creators/${idDitko}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`;
 const imgComic = `http://gateway.marvel.com/v1/public/comics/${idComic}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`;
+const imgSeries = `http://gateway.marvel.com/v1/public/series/${idSeries}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`;
 
 function Miranha() {
 
@@ -28,6 +30,7 @@ function Miranha() {
     const [lee, setLee] = useState([])
     const [ditko, setDitko] = useState([])
     const [comic, setComic] = useState([])
+    const [series, setSeries] = useState([])
 
     useEffect(() => {
 
@@ -75,13 +78,25 @@ function Miranha() {
         }
         getComic()
 
+
+        const getSeries = async () => {
+            try {
+                const resposta = await fetch(imgSeries)
+                const data = await resposta.json()
+                setSeries(data.data.results)
+            } catch (error) {
+                console.error('Erro ao buscar dados da API Marvel', error)
+            }
+        }
+        getSeries()
+
     }, []);
 
     return (
         <>
             <div>
                 <div className={Styles.banner}>
-                    <Link className={Styles.nav} href="/initial"><img src='voltarMiranha.png' width={60} height={40} /></Link>
+                    <Link className={Styles.nav} href="/initial"><img src='voltarPreto.png' width={30} height={30} /></Link>
                 </div>
                 <div className={Styles.faixa}>
                 </div>
@@ -152,6 +167,30 @@ function Miranha() {
                             ))}
                         </ul>
                         <p>O Homem-Aranha, alter ego de Peter Parker, é um super-herói da Marvel Comics. Após ser picado por uma aranha geneticamente modificada, Peter ganha habilidades como força sobre-humana e a capacidade de escalar paredes. Ele se torna o Homem-Aranha e luta contra o crime em Nova York. Peter é um estudante universitário, fotógrafo freelance e herói mascarado, conhecido por seu traje vermelho e azul, além de suas habilidades acrobáticas. Sua história destaca a responsabilidade associada aos seus poderes e suas lutas diárias. O Homem-Aranha é um ícone cultural presente em quadrinhos, filmes e outros meios de entretenimento.</p>
+                    </div>
+                </div>
+                
+                <div className={Styles.comic}>
+                    <div className={Styles.seriesTexto}>
+                        <ul>
+                            {series.map((series) => (
+                                <li key={series.id}>{series.name}
+                                    <Image
+                                        src={`${series.thumbnail.path}.${series.thumbnail.extension}`}
+                                        alt={series.name}
+                                        width={200}
+                                        height={200} />
+                                </li>
+                            ))}
+                        </ul>
+                        <p>A obra "Superior Spider-Man Vol. 2: Otto-matic" (2019) é uma adição intrigante ao vasto universo do Homem-Aranha. Escrito por Christos Gage e ilustrado por Mike Hawthorne, o enredo continua a saga do Doutor Octopus, que assumiu o corpo de Peter Parker em uma trama anterior. Nesta edição, os leitores são levados a uma experiência única, explorando a complexidade moral do personagem enquanto ele busca redenção e assume o manto do "Superior Spider-Man". A narrativa habilmente mescla a ação típica dos quadrinhos do Homem-Aranha com elementos mais profundos de autoconhecimento e redenção. "Otto-matic" destaca-se não apenas pelos confrontos épicos e reviravoltas emocionantes, mas também pela reflexão sobre o que significa ser um herói. A série oferece uma abordagem fresca e inovadora para o icônico personagem, mantendo os leitores ansiosos para descobrir os destinos intrincados e surpreendentes que aguardam o "Superior Spider-Man".
+
+
+
+
+
+
+</p>
                     </div>
                 </div>
             

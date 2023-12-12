@@ -13,7 +13,7 @@ function Initial() {
 
 <div>
                 <div className={Styles.banner}>
-                <Link className={Styles.nav} href="/initial"><img src='voltarMorbius.png' width={100} height={70} /></Link>
+                <Link className={Styles.nav} href="/initial"><img src='voltarBranco.png' width={30} height={30} /></Link>
                 </div>
                 <div className={Styles.faixa}>
                 </div>
@@ -38,7 +38,7 @@ function Initial() {
                 </div>
                 <div className={Styles.card}>
 
-                    <div className={Styles.imgBox}>
+                    <div className={Styles.imgBlack}>
 
                         <Link className={Styles.nav} href=""><img src="helena.jpeg" width={50} height={50} /></Link>
 
@@ -46,6 +46,7 @@ function Initial() {
 
                     <div className={Styles.content}>
                         <h1>Helena Souza</h1>
+                        <p>(não realizou o projeto)</p>
 
                     </div>
 
@@ -80,7 +81,7 @@ function Initial() {
                 </div>
                 <div className={Styles.card}>
 
-                    <div className={Styles.imgBox}>
+                    <div className={Styles.imgBlack}>
 
                         <Link className={Styles.nav} href=""><img src="mariae.jpeg" width={50} height={50} /></Link>
 
@@ -88,6 +89,8 @@ function Initial() {
 
                     <div className={Styles.content}>
                         <h1>Maria Eduarda Ribeiro</h1>
+                        <p>(não realizou o projeto)</p>
+
 
                     </div>
 

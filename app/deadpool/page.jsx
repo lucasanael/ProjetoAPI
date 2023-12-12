@@ -24,13 +24,15 @@ const imgLiefeld = `http://gateway.marvel.com/v1/public/creators/${idLiefeld}?li
 
 const imgComic = `http://gateway.marvel.com/v1/public/comics/${idComic}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`;
 
-const imgSeries = `http://gateway.marvel.com/v1/public/series/${idComic}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`
+const imgSeries = `http://gateway.marvel.com/v1/public/series/${idSeries}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`
+
 function Deadpool() {
 
     const [deadpool, setDeadpool] = useState([])
     const [nicieza, setNicieza] = useState([])
     const [liefeld, setLiefeld] = useState([])
-    const [Comic, setComic] = useState([])
+    const [comic, setComic] = useState([])
+    const [series, setSeries] = useState([])
 
     useEffect(() => {
 
@@ -46,7 +48,7 @@ function Deadpool() {
                 console.error('Erro ao buscar dados da API Marvel', error)
             }
         }
-        getDeadpool ()
+        getDeadpool()
 
         const getNicieza = async () => {
 
@@ -60,7 +62,7 @@ function Deadpool() {
                 console.error('Erro ao buscar dados da API Marvel', error)
             }
         }
-        getNicieza ()
+        getNicieza()
 
         const getLiefeld = async () => {
 
@@ -74,7 +76,7 @@ function Deadpool() {
                 console.error('Erro ao buscar dados da API Marvel', error)
             }
         }
-        getLiefeld ()
+        getLiefeld()
 
         const getComic = async () => {
 
@@ -89,74 +91,119 @@ function Deadpool() {
             }
         }
         getComic()
+
+        const getSeries = async () => {
+
+            try {
+                const reposta = await fetch(imgSeries)
+                const data = await reposta.json()
+                setSeries(data.data.results)
+            }
+            catch (error) {
+
+                console.error('Erro ao buscar dados da API Marvel', error)
+            }
+        }
+        getSeries()
     }, []);
 
     return (
         <>
-
-            <div>
-                <div className={Styles.banner}>
-                    <Link className={Styles.nav} href="/initial"><img src='voltarMorbius.png' width={100} height={70} /></Link>
-                </div>
-                <div className={Styles.faixa}>
-                </div>
+          <div>
+            <div className={Styles.banner}>
+              <Link className={Styles.nav} href="/initial"><img src='voltarPreto.png' width={30} height={30} /></Link>
             </div>
-
-            <div className={Styles.imgPerfil}>
-                <ul>
-                    {deadpool.map((deapool) => (
-                        <li key={deapool.id}>{deapool.name}
-                            <Image
-                                src={`${deapool.thumbnail.path}.${deapool.thumbnail.extension}`}
-                                alt={deapool.name}
-                                width={200}
-                                height={200} />
-                        </li>
-                    ))}
-                </ul>
+            <div className={Styles.faixa}>
             </div>
-
-            <h1 className={Styles.name}>Gamora</h1>
-
-
-            <div className={Styles.creator}>
-
-                <div className={Styles.creatorPicture}>
-                    <ul>
-                        {deadpool.map((deapool) => (
-                            <li key={deapool.id}>{deapool.name}
-                                <Image
-                                    src={`${deapool.thumbnail.path}.${deapool.thumbnail.extension}`}
-                                    alt={deapool.name}
-                                    width={200}
-                                    height={200} />
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div className={Styles.creatorTexto}><p>A alienígena de pele verde apareceu pela primeira vez em Strange Tales (1951) #180, publicada em 1975. A publicação tem roteiro e arte assinados por Jim Starlin, criador da personagem. Gamora é filha adotiva de Thanos, que a criou para ser a “mulher mais mortal da Galáxia”. Isso aconteceu após o louco Titã ver os pais da menina serem mortos e todo o povo alienígena Zen-Whoberi ser eliminado da existência. </p></div>
-
+          </div>
+      
+          <div>
+            <ul>
+              {deadpool.map((deadpool) => (
+                <li className={Styles.imgPerfil} key={deadpool.id}>{deadpool.name}
+                  <Image
+                    src={`${deadpool.thumbnail.path}.${deadpool.thumbnail.extension}`}
+                    alt={deadpool.name}
+                    width={200}
+                    height={200} />
+                </li>
+              ))}
+            </ul>
+          </div>
+      
+          <h1 className={Styles.name}>Deadpool</h1>
+      
+          <div className={Styles.creator}>
+            <div className={Styles.creatorPicture}>
+              <ul>
+                {nicieza.map((nicieza) => (
+                  <li key={nicieza.id}>{nicieza.name}
+                    <Image
+                      src={`${nicieza.thumbnail.path}.${nicieza.thumbnail.extension}`}
+                      alt={nicieza.name}
+                      width={200}
+                      height={200} />
+                  </li>
+                ))}
+              </ul>
             </div>
-
-            <div className={Styles.comic}>
-
-
-                <div className={Styles.comicTexto}><ul>
-                    {Deadpool.map((deapool) => (
-                        <li key={deapool.id}>{deapool.name}
-                            <Image
-                                src={`${deapool.thumbnail.path}.${deapool.thumbnail.extension}`}
-                                alt={deapool.name}
-                                width={200}
-                                height={200} />
-                        </li>
-                    ))}
-                </ul>
-                    <p>OUT OF TIME AND OUT FOR REVENGE! The story continues as we follow GAMORA to the doomed planet that is UBLIEX. Perched on the brink of a black hole, its inhabitants count down the hours to their planet's imminent demise as it is swallowed up by the approaching Singularity. Will Gamora find her revenge among the inhabitants of Ubliex before the black hole consumes them all? Or will the citizens of this world - including a doomsday cult, junkie bounty hunters and a young woman with a tremendous destiny - stop her first?</p></div>
-
+      
+            <div className={Styles.creatorPicture}>
+              <ul>
+                {liefeld.map((liefeld) => (
+                  <li key={liefeld.id}>{liefeld.name}
+                    <Image
+                      src={`${liefeld.thumbnail.path}.${liefeld.thumbnail.extension}`}
+                      alt={liefeld.name}
+                      width={200}
+                      height={200} />
+                  </li>
+                ))}
+              </ul>
             </div>
-
+      
+            <div className={Styles.creatorTexto}>
+              <p>Criado pelo artista/escritor Rob Liefeld e pelo escritor Fabian Nicieza, Deadpool fez sua primeira aparição nas páginas da capa de The New Mutants #98 datada de fevereiro de 1991. De acordo com Nicieza, Liefeld criou o design visual e o nome do personagem, e o próprio Nicieza criou os maneirismos de fala do personagem.</p>
+            </div>
+          </div>
+      
+          <div className={Styles.comic}>
+            <div className={Styles.comicTexto}>
+              <ul>
+                {comic.map((comic) => (
+                  <li key={comic.id}>{comic.name}
+                    <Image
+                      src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
+                      alt={comic.name}
+                      width={200}
+                      height={310} />
+                  </li>
+                ))}
+              </ul>
+              <p>HEART-BROKEN! Things aren't looking great for Deadpool and his new paramour, Valentine Vuong. You know how it can be in love - you just want to be together, but there is always some secret society of killers that gets in the way and your heart and/or glass arms get shattered.</p>
+            </div>
+      
+            <div className={Styles.seriesTexto}>
+            <ul>
+              {series.map((series) => (
+                <li clakey={series.id}>
+                  {series.name}
+                  <Image
+                    src={`${series.thumbnail.path}.${series.thumbnail.extension}`}
+                    alt={series.name}
+                    width={400}
+                    height={300}
+                  
+                  />
+                </li>
+              ))}
+            </ul>
+            <p> Deadpool, a série de quadrinhos lançada em 1994, representa um marco significativo no universo da Marvel Comics. Criado por Fabian Nicieza e Rob Liefeld, o anti-herói mercenário conhecido como Deadpool, alter ego de Wade Wilson, cativou os fãs com sua personalidade única e irreverente. A série é reconhecida por seu humor ácido, quebra de quarta parede e narrativa autoconsciente, características que diferenciam Deadpool de outros personagens do gênero. Ao longo dos anos, a popularidade do personagem cresceu exponencialmente, culminando em adaptações cinematográficas bem-sucedidas que solidificaram Deadpool como um ícone cultural, conquistando tanto os aficionados por quadrinhos quanto o público em geral. A série de 1994, essencial para compreender a essência do Mercenário Tagarela, contribuiu para o status duradouro e a relevância do personagem nos diversos meios de entretenimento.</p>
+</div>
+          </div>
         </>
-    )
-}
-export default Deadpool
+      );
+ }
+      
+export default Deadpool;
+      
