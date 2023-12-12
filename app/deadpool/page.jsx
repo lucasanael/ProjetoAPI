@@ -167,7 +167,7 @@ function Deadpool() {
         </div>
 
         <div className={Styles.creatorTexto}>
-          <p>Criado pelo artista/escritor Rob Liefeld e pelo escritor Fabian Nicieza, Deadpool fez sua primeira aparição nas páginas da capa de The New Mutants #98 datada de fevereiro de 1991. De acordo com Nicieza, Liefeld criou o design visual e o nome do personagem, e o próprio Nicieza criou os maneirismos de fala do personagem.</p>
+          <p>Criado pelo artista e escritor Rob Liefeld e pelo escritor Fabian Nicieza, Deadpool fez sua primeira aparição nas páginas da capa de The New Mutants #98 datada de fevereiro de 1991. De acordo com Nicieza, Liefeld criou o design visual e o nome do personagem, e o próprio Nicieza criou os maneirismos de fala do personagem.</p>
         </div>
       </div>
 
