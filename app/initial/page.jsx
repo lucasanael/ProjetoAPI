@@ -15,7 +15,8 @@ function Initial() {
                 <Link className={Styles.nav} href="/grupo"> <Image
                             width={40}
                             height={40}
-                            src='/iconGrupo.png' /></Link>
+                            src='/iconGrupo.png'
+                            alt="Icon Grupo" /></Link>
             </div>
 
 
@@ -40,7 +41,8 @@ function Initial() {
                         <Link className={Styles.nav} href="/miranha"><Image
                             width={500}
                             height={500}
-                            src='/miranha.jpg' /></Link>
+                            src='/miranha.jpg'
+                            alt="Spider Man" /></Link>
 
 
                     </div>
@@ -58,7 +60,8 @@ function Initial() {
                         <Link className={Styles.nav} href="/morbius"> <Image
                             width={500}
                             height={500}
-                            src='/morbius.jpg' /></Link>
+                            src='/morbius.jpg'
+                            alt="Morbius" /></Link>
 
                     </div>
 
@@ -75,7 +78,8 @@ function Initial() {
                         <Link className={Styles.nav} href="/loki"><Image
                             width={500}
                             height={500}
-                            src='/loki.jpg' /></Link>
+                            src='/loki.jpg'
+                            alt="Loki" /></Link>
 
                     </div>
 
@@ -92,7 +96,8 @@ function Initial() {
                         <Link className={Styles.nav} href="/gamora"><Image
                             width={500}
                             height={500}
-                            src='/gamora.jpg' /></Link>
+                            src='/gamora.jpg'
+                            alt="Gamora" /></Link>
 
                     </div>
 
@@ -109,7 +114,8 @@ function Initial() {
                         <Link className={Styles.nav} href="/blackWidow"><Image
                             width={500}
                             height={500}
-                            src='/blackWidow.jpg' /></Link>
+                            src='/blackWidow.jpg'
+                            alt="Black Widow" /></Link>
 
                     </div>
 
@@ -126,7 +132,8 @@ function Initial() {
                         <Link className={Styles.nav} href="/deadpool"><Image
                             width={500}
                             height={500}
-                            src='/deadpool.jpg' /></Link>
+                            src='/deadpool.jpg'
+                            alt="DeadPool" /></Link>
 
                     </div>
 
@@ -141,7 +148,13 @@ function Initial() {
 
             
             <div className={Styles.logo}>
-                    <Link  href="/initial"><img src='marvel.jpg' width={100} height={35} /></Link>
+                    <Link  href="/initial">
+                    <Image
+                            width={100}
+                            height={35}
+                            src='/marvel.jpg'
+                            alt="Marvel" /></Link>
+                    
                     </div>
 
 

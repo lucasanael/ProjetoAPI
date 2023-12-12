@@ -117,7 +117,8 @@ function Morbius() {
                     <Link className={Styles.nav} href="/initial"> <Image
                             width={40}
                             height={30}
-                            src='/voltarRed.png' /></Link>
+                            src='/voltarRed.png'
+                            alt="Voltar" /></Link>
                 </div>
                 <div className={Styles.faixa}>
                 </div>
