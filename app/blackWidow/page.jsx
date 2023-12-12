@@ -14,6 +14,7 @@ const idLee = "30"
 const idHeck = "305"
 const idRico = "1447"
 const idComic = "93021"
+const idSeries = "17318"
 
 const timestamp = new Date().getTime()
 const hash = generationMarvelHash(timestamp, privateKey, publicKey)
@@ -23,6 +24,7 @@ const imgLee = `http://gateway.marvel.com/v1/public/creators/${idLee}?limit=5&ts
 const imgHeck = `http://gateway.marvel.com/v1/public/creators/${idHeck}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash};`
 const imgRico = `http://gateway.marvel.com/v1/public/creators/${idRico}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash};`
 const imgComic = `http://gateway.marvel.com/v1/public/comics/${idComic}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`;
+const imgSeries = `http://gateway.marvel.com/v1/public/series/${idSeries}?limit=5&ts=${timestamp}&apikey=${publicKey}&hash=${hash}`;
 
 function Widow() {
 
@@ -31,6 +33,7 @@ function Widow() {
     const [heck, setHeck] = useState([])
     const [rico, setRico] = useState([])
     const [comic, setComic] = useState([])
+    const [series, setSeries] = useState([])
 
     useEffect(() => {
 
@@ -71,12 +74,23 @@ function Widow() {
             try {
                 const resposta = await fetch(imgRico)
                 const data = await resposta.json()
-                setHeck(data.data.results)
+                setRico(data.data.results)
             } catch (error) {
                 console.error('Erro ao buscar dados da API Marvel', error)
             }
         }
         getRico()
+
+        const getSeries = async () => {
+            try {
+                const resposta = await fetch(imgSeries)
+                const data = await resposta.json()
+                setSeries(data.data.results)
+            } catch (error) {
+                console.error('Erro ao buscar dados da API Marvel', error)
+            }
+        }
+        getSeries()
 
         const getComic = async () => {
             try {
@@ -90,12 +104,12 @@ function Widow() {
         getComic()
 
     }, []);
-
+    
     return (
         <>
             <div>
                 <div className={Styles.banner}>
-                    <Link className={Styles.nav} href="/initial"><img src='voltarMiranha.png' width={60} height={40} /></Link>
+                    <Link className={Styles.nav} href="/initial"><img src='voltarBranco.png' width={30} height={30} /></Link>
                 </div>
                 <div className={Styles.faixa}>
                 </div>
@@ -175,7 +189,24 @@ function Widow() {
                                         src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
                                         alt={comic.name}
                                         width={200}
-                                        height={200} />
+                                        height={300} />
+                                </li>
+                            ))}
+                        </ul>
+                        <p>The bloody conclusion to \"Die by the Blade\"! Guns. Explosives. Widow's bites. Good old-fashioned hand-to-hand. Natasha Romanoff is an expert in just about every form of combat known to humankind…and it's not enough. The Living Blade will not let his query escape this time. San Francisco's golden gates slam shut for the superspy as Kelly Thompson and Elena Casagrande delivers another stunning visual feast in their Eisner-winning epic!</p>
+                    </div>
+                </div>
+
+                <div className={Styles.comic}>
+                    <div className={Styles.seriesTexto}>
+                    <ul>
+                            {series.map((series) => (
+                                <li key={series.id}>{series.name}
+                                    <Image
+                                        src={`${series.thumbnail.path}.${series.thumbnail.extension}`}
+                                        alt={series.name}
+                                        width={400}
+                                        height={300} />
                                 </li>
                             ))}
                         </ul>

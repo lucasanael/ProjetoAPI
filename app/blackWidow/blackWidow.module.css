@@ -1,8 +1,17 @@
 .banner {
     background-image: url(../../public/Black-Widow-Avengerss4.jpg);
-    height: 450px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.ajuste {
+    margin-top: 38%;
+}
+
+.nav img{
+    margin-top: 1%;
+    margin-left: 1%;
 }
 
 .creator {
@@ -11,13 +20,7 @@
     justify-content: space-between;
     margin-top: 10%;
 }
-.comic {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 1%;
-   
-}
+
 .comicTexto {
     color: white;
     background-color: rgb(120, 11, 11);
@@ -27,13 +30,33 @@
     margin-bottom: 10%;
     display: flex;
     flex-direction: row;
-   
+
 }
+
 .comicTexto p {
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 7%;
 
-   
+
+}
+
+.seriesTexto {
+    color: white;
+    background-color: rgb(120, 11, 11);
+    padding: 90px;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.seriesTexto p {
+    margin-left: 10%;
+    margin-top: 7%;
+
+
 }
 
 .creatorTexto {
@@ -51,6 +74,7 @@
     justify-content: space-around;
     margin-left: 10%;
 }
+
 .creatorPicture div {
     margin-left: 5%;
 }

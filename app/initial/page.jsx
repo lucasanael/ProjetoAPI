@@ -84,7 +84,7 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href="/morbius"><img src="blackwidow.jpg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href="/blackWidow"><img src="blackwidow.jpg" width={50} height={50} /></Link>
 
                     </div>
 
