@@ -81,10 +81,10 @@ function Gamora() {
       <div>
         <div className={Styles.banner}>
           <Link className={Styles.nav} href="/initial"> <Image
-                            width={30}
-                            height={30}
-                            src='/voltarPreto.png'
-                            alt="Voltar" /></Link>
+            width={30}
+            height={30}
+            src='/voltarPreto.png'
+            alt="Voltar" /></Link>
         </div>
         <div className={Styles.faixa}></div>
       </div>
@@ -128,55 +128,54 @@ function Gamora() {
         </div>
       </div>
 
-      
-        <div className={Styles.comic}>
-          <div className={Styles.comicTexto}>
-            <ul>
-              {comic.map((comic) => (
-                <li key={comic.id}>
-                  {comic.name}
-                  <Image
-                    src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
-                    alt={comic.name}
-                    width={200}
-                    height={310}
-                  />
-                </li>
-              ))}
-            </ul>
-            <p>OUT OF TIME AND OUT FOR REVENGE! The story continues as we follow GAMORA to the doomed planet that is UBLIEX. Perched on the brink of a black hole, its inhabitants count down the hours to their planet's imminent demise as it is swallowed up by the approaching Singularity. Will Gamora find her revenge among the inhabitants of Ubliex before the black hole consumes them all? Or will the citizens of this world - including a doomsday cult, junkie bounty hunters and a young woman with a tremendous destiny - stop her first?</p>
-            
-          </div>
+
+      <div className={Styles.comic}>
+        <div className={Styles.comicTexto}>
+          <ul>
+            {comic.map((comic) => (
+              <li key={comic.id}>
+                {comic.name}
+                <Image
+                  src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
+                  alt={comic.name}
+                  width={200}
+                  height={310}
+                />
+              </li>
+            ))}
+          </ul>
+          <p>OUT OF TIME AND OUT FOR REVENGE! The story continues as we follow GAMORA to the doomed planet that is UBLIEX. Perched on the brink of a black hole, its inhabitants count down the hours to their planets imminent demise as it is swallowed up by the approaching Singularity. Will Gamora find her revenge among the inhabitants of Ubliex before the black hole consumes them all? Or will the citizens of this world - including a doomsday cult, junkie bounty hunters and a young woman with a tremendous destiny - stop her first?</p>
+
         </div>
+      </div>
 
-        <div className={Styles.comic}>
-          <div className={Styles.seriesTexto}>
-            <ul>
-              {series.map((series) => (
-                <li key={comic.id}>
-                  {series.name}
-                  <Image
-                    src={`${series.thumbnail.path}.${series.thumbnail.extension}`}
-                    alt={series.name}
-                    width={400}
-                    height={320}
-                  />
-                </li>
-              ))}
-            </ul>
-            <p>
-A série de quadrinhos "Gamora," lançada em 2016 e encerrada em 2017, oferece uma exploração fascinante do universo cósmico da Marvel, centrando-se na enigmática e letal Gamora, conhecida como a "Mulher Mais Perigosa da Galáxia." Escrita por Nicole Perlman, a trama mergulha nos aspectos complexos do passado e da psique de Gamora, revelando camadas profundas de sua personalidade e motivações. A série destaca a busca da personagem por redenção e uma compreensão mais profunda de seu próprio destino. Além disso, apresenta relações complexas com outros personagens do cosmos Marvel, oferecendo uma perspectiva única sobre o papel de Gamora no contexto mais amplo do universo. Com uma narrativa envolvente e arte visualmente impactante, a série "Gamora" proporciona aos fãs uma imersão cativante na jornada individual desta formidável guerreira verde, expandindo e enriquecendo ainda mais o rico tecido narrativo do universo Marvel cósmico.</p>
-            
-          </div>
+      <div className={Styles.comic}>
+        <div className={Styles.seriesTexto}>
+          <ul>
+            {series.map((series) => (
+              <li key={comic.id}>
+                {series.name}
+                <Image
+                  src={`${series.thumbnail.path}.${series.thumbnail.extension}`}
+                  alt={series.name}
+                  width={400}
+                  height={320}
+                />
+              </li>
+            ))}
+          </ul>
+          <p>A série de quadrinhos Gamora, lançada em 2016 e encerrada em 2017, oferece uma exploração fascinante do universo cósmico da Marvel, centrando-se na enigmática e letal Gamora, conhecida como a Mulher Mais Perigosa da Galáxia. Escrita por Nicole Perlman, a trama mergulha nos aspectos complexos do passado e da psique de Gamora, revelando camadas profundas de sua personalidade e motivações. A série destaca a busca da personagem por redenção e uma compreensão mais profunda de seu próprio destino. Além disso, apresenta relações complexas com outros personagens do cosmos Marvel, oferecendo uma perspectiva única sobre o papel de Gamora no contexto mais amplo do universo. Com uma narrativa envolvente e arte visualmente impactante, a série Gamora proporciona aos fãs uma imersão cativante na jornada individual desta formidável guerreira verde, expandindo e enriquecendo ainda mais o rico tecido narrativo do universo Marvel cósmico.</p>
+
         </div>
+      </div>
 
 
 
 
 
-       
-        
-     
+
+
+
     </>
   );
 }
