@@ -46,6 +46,7 @@ function Initial() {
 
                     <div className={Styles.content}>
                         <h1>Helena Souza</h1>
+                        <p>(não realizou o projeto)</p>
 
                     </div>
 
@@ -88,6 +89,8 @@ function Initial() {
 
                     <div className={Styles.content}>
                         <h1>Maria Eduarda Ribeiro</h1>
+                        <p>(não realizou o projeto)</p>
+
 
                     </div>
 
