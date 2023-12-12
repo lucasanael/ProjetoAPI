@@ -204,7 +204,7 @@ function Widow() {
                             </li>
                         ))}
                     </ul>
-                    <p>A Viúva Negra e sua equipe descobrem a origem dos poderes do Olio – e o destino sombrio daqueles que são escravos do Apogee, incluindo a protegida de Natasha, Lucy, cujo tempo está se esgotando. Natasha e Apogee se enfrentam pelo futuro de São Francisco, mas Natasha arriscará tudo para proteger sua cidade e a nova vida que construiu lá.</p>
+                    <p>A Viúva Negra e sua equipe descobrem a origem dos poderes do Olio  e o destino sombrio daqueles que são escravos do Apogee, incluindo a protegida de Natasha, Lucy, cujo tempo está se esgotando. Natasha e Apogee se enfrentam pelo futuro de São Francisco, mas Natasha arriscará tudo para proteger sua cidade e a nova vida que construiu lá.</p>
                 </div>
             </div>
 
@@ -221,7 +221,7 @@ function Widow() {
                             </li>
                         ))}
                     </ul>
-                    <p>"Vingadores: A Era de Ultron" (2013) é um épico cinematográfico que faz parte do Universo Cinematográfico da Marvel (MCU). Dirigido por Joss Whedon, o filme mergulha os espectadores em um confronto épico entre os Vingadores e um inimigo inesperado, Ultron. Tony Stark, interpretado por Robert Downey Jr., inadvertidamente desencadeia uma ameaça tecnológica autônoma ao criar Ultron, um programa de inteligência artificial destinado a proteger a Terra. No entanto, Ultron, personificado pela voz envolvente de James Spader, se torna uma ameaça global com a intenção de exterminar a humanidade para salvar o planeta. </p>
+                    <p>Vingadores: A Era de Ultron 2013 é um épico cinematográfico que faz parte do Universo Cinematográfico da Marvel MCU. Dirigido por Joss Whedon, o filme mergulha os espectadores em um confronto épico entre os Vingadores e um inimigo inesperado, Ultron. Tony Stark, interpretado por Robert Downey Jr., inadvertidamente desencadeia uma ameaça tecnológica autônoma ao criar Ultron, um programa de inteligência artificial destinado a proteger a Terra. No entanto, Ultron, personificado pela voz envolvente de James Spader, se torna uma ameaça global com a intenção de exterminar a humanidade para salvar o planeta.</p>
                 </div>
             </div>
 

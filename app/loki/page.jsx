@@ -237,7 +237,7 @@ function Loki() {
                             </li>
                         ))}
                     </ul>
-                    <p>A série "A+X" (2012-2014) proporcionou aos fãs da Marvel uma experiência única ao unir alguns dos super-heróis mais icônicos em histórias empolgantes e inesperadas. A fórmula de combinar personagens de diferentes equipes, como Vingadores e X-Men, resultou em narrativas dinâmicas e surpreendentes. Cada edição apresentava uma dupla improvável de heróis, explorando suas interações e habilidades em conjunto, criando momentos memoráveis e emocionantes. Com uma abordagem que mesclava ação intensa, humor e um toque de camaradagem, "A+X" cativou os leitores, oferecendo uma perspectiva única sobre a rica tapeçaria do universo Marvel.</p>
+                    <p>A série A+X (2012-2014) proporcionou aos fãs da Marvel uma experiência única ao unir alguns dos super-heróis mais icônicos em histórias empolgantes e inesperadas. A fórmula de combinar personagens de diferentes equipes, como Vingadores e X-Men, resultou em narrativas dinâmicas e surpreendentes. Cada edição apresentava uma dupla improvável de heróis, explorando suas interações e habilidades em conjunto, criando momentos memoráveis e emocionantes. Com uma abordagem que mesclava ação intensa, humor e um toque de camaradagem, A+X cativou os leitores, oferecendo uma perspectiva única sobre a rica tapeçaria do universo Marvel.</p>
                 </div>
             </div>
 
