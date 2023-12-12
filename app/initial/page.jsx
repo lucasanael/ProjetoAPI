@@ -1,6 +1,7 @@
 
 import Link from "next/link"
 import Styles from "@/app/initial/page.module.css"
+import Image from "next/image"
 
 
 
@@ -11,7 +12,10 @@ function Initial() {
     return (
         <>
             <div className={Styles.marvel}>
-                <Link className={Styles.nav} href="/grupo"><img src='iconGrupo.png' width={50} height={50} /></Link>
+                <Link className={Styles.nav} href="/grupo"> <Image
+                            width={40}
+                            height={40}
+                            src='/iconGrupo.png' /></Link>
             </div>
 
 
@@ -33,7 +37,10 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href="/miranha"><img src="miranha.jpg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href="/miranha"><Image
+                            width={500}
+                            height={500}
+                            src='/miranha.jpg' /></Link>
 
 
                     </div>
@@ -48,7 +55,10 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href="/morbius"><img src="morbius.jpg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href="/morbius"> <Image
+                            width={500}
+                            height={500}
+                            src='/morbius.jpg' /></Link>
 
                     </div>
 
@@ -62,7 +72,10 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href="/loki"> <img src="loki.jpg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href="/loki"><Image
+                            width={500}
+                            height={500}
+                            src='/loki.jpg' /></Link>
 
                     </div>
 
@@ -76,7 +89,10 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href="/gamora"> <img src="gamora.jpg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href="/gamora"><Image
+                            width={500}
+                            height={500}
+                            src='/gamora.jpg' /></Link>
 
                     </div>
 
@@ -90,7 +106,10 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href="/blackWidow"><img src="blackwidow.jpg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href="/blackWidow"><Image
+                            width={500}
+                            height={500}
+                            src='/blackWidow.jpg' /></Link>
 
                     </div>
 
@@ -104,7 +123,10 @@ function Initial() {
 
                     <div className={Styles.imgBox}>
 
-                        <Link className={Styles.nav} href="/deadpool"> <img src="deadpool.jpg" width={50} height={50} /></Link>
+                        <Link className={Styles.nav} href="/deadpool"><Image
+                            width={500}
+                            height={500}
+                            src='/deadpool.jpg' /></Link>
 
                     </div>
 

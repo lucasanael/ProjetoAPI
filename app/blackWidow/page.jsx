@@ -104,12 +104,16 @@ function Widow() {
         getComic()
 
     }, []);
-    
+
     return (
         <>
             <div>
                 <div className={Styles.banner}>
-                    <Link className={Styles.nav} href="/initial"><img src='voltarBranco.png' width={30} height={30} /></Link>
+                    <Link className={Styles.nav} href="/initial">
+                        <Image
+                            width={30}
+                            height={30}
+                            src='/voltarBranco.png' /></Link>
                 </div>
                 <div className={Styles.faixa}>
                 </div>
@@ -137,10 +141,16 @@ function Widow() {
                             {lee.map((lee) => (
                                 <li key={lee.id}>{lee.name}
                                     <Image
+
                                         src={`${lee.thumbnail.path}.${lee.thumbnail.extension}`}
                                         alt={lee.name}
                                         width={200}
-                                        height={300} />
+
+                                        height={300}
+
+
+
+                                    />
                                 </li>
                             ))}
                         </ul>
@@ -173,47 +183,47 @@ function Widow() {
                             ))}
                         </ul>
                     </div>
-                    </div>
-
-                    <div className={Styles.creatorTexto}>
-                        <p>Stan Lee e Don Heck, são figuras significativas na indústria de quadrinhos. Stan Lee (1922-2018) foi escritor, editor, editor-chefe e presidente da Marvel Comics, e criou muitos personagens icônicos embora não tenha sido o criador original da Viúva Negra. Don Heck (1929-1995) foi um prolífico artista de quadrinhos e co-criador da Viúva Negra, junto com o escritor Don Rico. Heck desempenhou um papel crucial na visualização inicial da personagem e em várias histórias envolvendo a Viúva Negra nas primeiras décadas da Marvel Comics.</p>
-                    </div>
                 </div>
 
-                <div className={Styles.comic}>
-                    <div className={Styles.comicTexto}>
-                        <ul>
-                            {comic.map((comic) => (
-                                <li key={comic.id}>{comic.name}
-                                    <Image
-                                        src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
-                                        alt={comic.name}
-                                        width={200}
-                                        height={300} />
-                                </li>
-                            ))}
-                        </ul>
-                        <p>A Viúva Negra e sua equipe descobrem a origem dos poderes do Olio – e o destino sombrio daqueles que são escravos do Apogee, incluindo a protegida de Natasha, Lucy, cujo tempo está se esgotando. Natasha e Apogee se enfrentam pelo futuro de São Francisco, mas Natasha arriscará tudo para proteger sua cidade e a nova vida que construiu lá.</p>
-                    </div>
+                <div className={Styles.creatorTexto}>
+                    <p>Stan Lee e Don Heck, são figuras significativas na indústria de quadrinhos. Stan Lee (1922-2018) foi escritor, editor, editor-chefe e presidente da Marvel Comics, e criou muitos personagens icônicos embora não tenha sido o criador original da Viúva Negra. Don Heck (1929-1995) foi um prolífico artista de quadrinhos e co-criador da Viúva Negra, junto com o escritor Don Rico. Heck desempenhou um papel crucial na visualização inicial da personagem e em várias histórias envolvendo a Viúva Negra nas primeiras décadas da Marvel Comics.</p>
                 </div>
+            </div>
 
-                <div className={Styles.comic}>
-                    <div className={Styles.seriesTexto}>
+            <div className={Styles.comic}>
+                <div className={Styles.comicTexto}>
                     <ul>
-                            {series.map((series) => (
-                                <li key={series.id}>{series.name}
-                                    <Image
-                                        src={`${series.thumbnail.path}.${series.thumbnail.extension}`}
-                                        alt={series.name}
-                                        width={400}
-                                        height={300} />
-                                </li>
-                            ))}
-                        </ul>
-                        <p>"Vingadores: A Era de Ultron" (2013) é um épico cinematográfico que faz parte do Universo Cinematográfico da Marvel (MCU). Dirigido por Joss Whedon, o filme mergulha os espectadores em um confronto épico entre os Vingadores e um inimigo inesperado, Ultron. Tony Stark, interpretado por Robert Downey Jr., inadvertidamente desencadeia uma ameaça tecnológica autônoma ao criar Ultron, um programa de inteligência artificial destinado a proteger a Terra. No entanto, Ultron, personificado pela voz envolvente de James Spader, se torna uma ameaça global com a intenção de exterminar a humanidade para salvar o planeta. </p>
-                    </div>
+                        {comic.map((comic) => (
+                            <li key={comic.id}>{comic.name}
+                                <Image
+                                    src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
+                                    alt={comic.name}
+                                    width={200}
+                                    height={300} />
+                            </li>
+                        ))}
+                    </ul>
+                    <p>A Viúva Negra e sua equipe descobrem a origem dos poderes do Olio – e o destino sombrio daqueles que são escravos do Apogee, incluindo a protegida de Natasha, Lucy, cujo tempo está se esgotando. Natasha e Apogee se enfrentam pelo futuro de São Francisco, mas Natasha arriscará tudo para proteger sua cidade e a nova vida que construiu lá.</p>
                 </div>
-            
+            </div>
+
+            <div className={Styles.comic}>
+                <div className={Styles.seriesTexto}>
+                    <ul>
+                        {series.map((series) => (
+                            <li key={series.id}>{series.name}
+                                <Image
+                                    src={`${series.thumbnail.path}.${series.thumbnail.extension}`}
+                                    alt={series.name}
+                                    width={400}
+                                    height={300} />
+                            </li>
+                        ))}
+                    </ul>
+                    <p>"Vingadores: A Era de Ultron" (2013) é um épico cinematográfico que faz parte do Universo Cinematográfico da Marvel (MCU). Dirigido por Joss Whedon, o filme mergulha os espectadores em um confronto épico entre os Vingadores e um inimigo inesperado, Ultron. Tony Stark, interpretado por Robert Downey Jr., inadvertidamente desencadeia uma ameaça tecnológica autônoma ao criar Ultron, um programa de inteligência artificial destinado a proteger a Terra. No entanto, Ultron, personificado pela voz envolvente de James Spader, se torna uma ameaça global com a intenção de exterminar a humanidade para salvar o planeta. </p>
+                </div>
+            </div>
+
         </>
     )
 }

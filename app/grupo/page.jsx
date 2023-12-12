@@ -1,6 +1,7 @@
 
 import Link from "next/link"
 import Styles from "@/app/grupo/page.module.css"
+import Image from "next/image"
 
 
 
@@ -13,7 +14,10 @@ function Initial() {
 
 <div>
                 <div className={Styles.banner}>
-                <Link className={Styles.nav} href="/initial"><img src='voltarBranco.png' width={30} height={30} /></Link>
+                <Link className={Styles.nav} href="/initial"><Image
+                            width={30}
+                            height={30}
+                            src='/voltarBranco.png' /></Link>
                 </div>
                 <div className={Styles.faixa}>
                 </div>
