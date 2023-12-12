@@ -16,6 +16,8 @@ const idComic = "109004"
 const idSeries ="16450"
 
 
+
+
 const timestamp = new Date().getTime()
 const hash = generationMarvelHash(timestamp, privateKey, publicKey)
 
