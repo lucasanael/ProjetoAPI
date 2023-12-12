@@ -1,0 +1,197 @@
+.banner {
+    background-image: url(../../public/miranhabanner2.png);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.nav img{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.comic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1%;
+   
+}
+.comicTexto {
+    color: white;
+    background-color: rgb(120, 11, 11);
+    padding: 90px;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+   
+}
+.comicTexto p {
+    margin-left: 10%;
+    margin-top: 3%;
+    text-align: justify;
+
+   
+}
+
+.seriesTexto {
+    color: white;
+    background-color:  rgb(120, 11, 11);
+    padding: 90px;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.seriesTexto p {
+    margin-left: 10%;
+    text-align: justify;
+
+
+}
+
+.creatorTexto {
+    color: white;
+    background-color: rgb(120, 11, 11);
+    padding: 90px;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 8%;
+    text-align: justify;
+}
+
+.creatorPicture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+.creatorPicture div {
+    margin-left: 5%;
+}
+
+.faixa {
+    background-color: rgb(120, 11, 11);
+    height: 20px;
+}
+
+.imgPerfil {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: -10%;
+    margin-left: 10%;
+}
+
+.imgPerfil img {
+    width: 100%;
+    margin-top: -6.5%;
+    height: auto;
+    display: block;
+}
+
+.name {
+    margin-top: 2%;
+    margin-left: 16%;
+}
+
+@media only screen and (max-width: 720px) {
+
+    .banner {
+        height: 100px;
+        width: 135%;
+    }
+
+    .faixa {
+        width: 135%;
+    }
+
+
+    .imgPerfil {
+
+        margin-left: 12%;
+    }
+
+    .imgPerfil img {
+        width: 100%;
+        margin-top: -8%;
+    }
+
+    .name {
+
+        margin-left: 45%;
+    }
+
+    .creator {
+        flex-direction: column;
+
+    }
+
+    .creatorPicture {
+        flex-direction: column;
+        margin-left: 20%;
+        margin-bottom: 20%;
+    }
+
+    .comicTexto {
+        padding: 50px;
+        margin-right: -30%;
+        margin-bottom: 8%;
+        text-align: justify;
+        flex-direction: column;
+    
+    }
+
+    .comicTexto p {
+        margin-left: 10%;
+        margin-top: 5%;
+    
+    
+    }
+
+    .creatorTexto {
+        padding: 50px;
+        margin-right: -30%;
+        margin-bottom: 8%;
+        text-align: justify;
+    }
+
+    .seriesTexto {
+        padding: 90px;
+        margin-right: -30%;
+        margin-bottom: 8%;
+        text-align: justify;
+        flex-direction: column;
+    
+    }
+
+    .seriesTexto ul {
+      margin-left: -45%;
+    
+    }
+    
+    .seriesTexto p {
+        margin-left: 0%;
+        margin-top: 5%;
+    
+    
+    }
+
+
+
+
+
+
+
+}
